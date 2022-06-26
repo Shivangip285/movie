@@ -9,6 +9,9 @@ class Point {
         this.x = x;
         this.y = y;
     }
+    public static Point at(int x, int y) {
+        return new Point(x, y);
+    }
 
     @Override
     public boolean equals(Object o) {

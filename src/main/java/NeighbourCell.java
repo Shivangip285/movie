@@ -5,7 +5,7 @@ public class NeighbourCell {
         int count = 0;
         for (int yDelta = -1; yDelta <= 1; yDelta++) {
             for (int xDelta = -1; xDelta <= 1; xDelta++) {
-                if (!(xDelta == 0 && yDelta == 0) && alives.contains(GameOfLife.at(p.x + xDelta, p.y + yDelta))) {
+                if (!(xDelta == 0 && yDelta == 0) && alives.contains(Point.at(p.x + xDelta, p.y + yDelta))) {
                     count++;
                 }
             }
